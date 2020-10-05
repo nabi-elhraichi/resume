@@ -1,0 +1,11 @@
+<h3>Project Form</h3>
+<br>
+<div class="add-project">
+    <form method="POST" action="." enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="row">
+            <div class="form-group col-md-12">{{ form.as_p }}</div>
+        </div>
+        <button type="submit">Add a project</button>
+    </form>
+</div>
